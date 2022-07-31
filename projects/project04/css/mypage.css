@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 레이아웃 */
+body{background-color: #fafbfc;}
+header{padding: 15px 15px 10px; display: flex; justify-content: space-between;border-bottom: 1px solid #c4c4c4; background-color: #fff;}
+main{}
+/* header */
+#mypage-title{display: flex;}
+#mypage-title h1{font-size: 16px; font-weight: bold; margin-left: 10px;}
+/* main */
+#login-wrap{padding: 30px 25px;font-size: 16px;font-weight: bold; display: flex; justify-content: space-between; align-items: center;}
+#login-wrap li a{display: inline-block;padding: 5px 15px;background-color: #1f8ce6; border-radius: 5px;color: #fff;}
+
+.point-wrap{background: #e7e7e7; display: flex; text-align: center; padding: 30px; justify-content: space-between; border-radius: 6px; font-size: 14px; font-weight: bold; margin: 0 15px 15px }
+.point-wrap a span{color:#4200ff}
+.charge{padding: 0 15px;}
+.charge a{color:#fff; font-size: 16px; font-weight: bold;width: 100%;background-color: #1f8ce6;display: block; padding: 15px 0; text-align: center; border-radius:6px}
+
+.shortcuts{margin-top: 10px;font-size: 14px; font-weight: bold;}
+.shortcuts>div>a{display: flex; justify-content: space-between;padding: 14px 15px; background-color: #fff; }
+.shortcuts>div:first-child{margin-bottom: 5px;}
+.shortcuts>div:nth-child(2){margin-bottom: 15px;}

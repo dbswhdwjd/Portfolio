@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/member.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="signup-title">
+            <h1>회원가입</h1>
+            <a href="index.html"><img src="images/my-Home.png" alt="홈아이콘"></a>
+        </div>
+    </header>
+    <section>
+        <div id="main_content">
+            <div id="join_box">
+                <form action="member_insert.php" method="post" name="member_form">
+                    <div class="form id">
+                        <div class="col2"><input type="text" name="id" placeholder="아이디" /></div>
+                        <div class="col3"><a href="#" onclick="check_id()">중복 확인</a></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="form pass">
+                        <div class="col2"><input type="password" name="pass" placeholder="비밀번호" /></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="form pass1">
+                        <div class="col2"><input type="password" name="pass_confirm" placeholder="비밀번호 확인" /></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="form name">
+                        <div class="col2"><input type="text" name="name" placeholder="이름" /></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="form email">
+                        <div class="col2"><input type="text" name="email1" placeholder="이메일" /><span>@</span><input type="text" name="email2" placeholder="이메일 주소" /></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="agree-wrap">
+                        <div class="all"><label for="all"><input type="checkbox" id="all" onclick='selectAll(this)'>선택 포함 전체 약관 동의</label></div>
+                        <div class="agree cf"><label for="agree"><input type="checkbox" id="agree">이용약관 동의 (필수)</label><a href="#">약관 보기</a></div>
+                        <div class="event"><label for="event"><input type="checkbox" id="event">이벤트, 혜택 알림 수신 동의 (선택)</label></div>
+                        <div class="gender cf"><label for="gender"><input type="checkbox" id="gender">성별, 생년 정보 제공 동의 (선택)</label><a href="#">약관 보기</a></div>
+                        <div class="privacy cf"> <label for="privacy"><input type="checkbox" id="privacy">개인 정보 수집 및 이용 (필수)</label><a href="#">약관 보기</a></div>
+                    </div>
+                    <p class="agree-text">이용약관,개인 정보 수집 및 이용에 동의해주세요.</p>
+                    <div class="buttons">
+                        <a href="#" onclick="reset_form()" />취소하기</a>
+                        <a href="#" onclick="check_input()" />회원가입 완료</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,1524 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name='Keywords' content='제주시청,관공서,클론코딩'>
+	<meta name='Author' content='jongjung'>
+    <meta name='Publisher' content='jongjung'>
+	<meta name='Description' content='관공서 클론코딩하기'>	
+	<title>제주시</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<script src="js/jquery-1.12.4.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+	<!-- 구글웹폰트 -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="skip">
+		<a href="#nav">전체 메뉴 바로가기</a>
+		<a href="#content">본문 바로가기</a>
+		<a href="#footer">하단 바로가기</a>
+    </div>
+	<div id="wrap">
+		<div id="header">
+			<div class="container">
+				<div class="head_search">
+					<div class="head_icon">
+						<a href="#" class="icon1"><img src="img/head_icon.jpg" alt="국가상징알아보기"/></a>
+						<a href="#" class="icon2"><img src="img/jejusi_on.png" alt="영상스토리"/></a>
+					</div>
+					<form action="#" method="get" class="search">
+						<input type="text" class="search_main"/>
+						<input type="image" src="img/search_btn.png" class="search_btn" alt="검색창"/>
+					</form>
+					<ul class="login_area">
+						<li><a href="#" class="login_in1">비회원로그인</a></li>
+						<li><a href="login/login.html" class="login_in1">로그인</a></li>
+						<li class="login_icon2">
+							<a href="#" class="login_in2">LANGUAGE</a>
+							<div class="language_menu">
+								<ul>
+									<li><a href="#">ENGLISH</a></li>
+									<li><a href="#">中文</a></li>
+									<li><a href="#">日本語</a></li>
+								</ul>
+							</div>	
+						</li>						
+					</ul>
+				</div>
+				<div class="head_nav">				 
+					<a href="index.html"><img src="img/logo.png" alt="홈화면"/></a>
+					<ul class="nav_search">						
+						<li>
+							<a href="subpage/subpage1.html">시민참여</a>
+							<div class="width100">
+								<div class="width1200">
+									<ul class="owd">
+										<li class="height39">
+											<span class="twd"><a href="#" class="aheight39">인터넷신문고</a></span>
+										</li>
+										<li class="height50"> 
+											<span class="twd"><a href="#" class="aheight50">시민게시판</a></span>	
+											<ul class="thwd">
+												<li><a href="#">칭찬합시다</a></li>
+												<li><a href="#">자유게시판</a></li>
+												<li><a href="#">사이버반상회</a></li>
+											</ul>
+										</li>
+										<li class="height50"> 
+											<span class="twd"><a href="#" class="aheight50">시민제안</a></span>
+											<ul class="thwd">
+												<li><a href="#">365 아이디어 제안</a></li>
+												<li><a href="#" class="window">제안/아이디어광장</a></li>
+											</ul>
+										</li>
+										<li class="height50"> 
+											<span class="twd"><a href="#" class="aheight50">교육 및 강좌</a></span>
+											<ul class="thwd">
+												<li><a href="#">시민정보화교육</a></li>
+												<li><a href="#" class="window">제주평생교육 다모아</a></li>
+											</ul>
+										</li> 
+										<li class="height50">
+											<span class="twd"><a href="#" class="aheight50">적극행정</a></span>
+										</li>
+										<li class="height39">
+											<span class="twd"><a href="#" class="aheight39">주민건의사항공개</a></span>
+										</li>
+										<li class="heigh112"> 
+											<span class="twd"><a href="#" class="aheight112">시험&middot;채용정보</a></span>	
+											<ul class="thwd">
+												<li><a href="#" class="window">지방제공무원</a></li>
+												<li><a href="#" class="window">임기제공무원</a></li>
+												<li><a href="#" class="window">소방공무원</a></li>
+												<li><a href="#" class="window">자치경찰</a></li>
+												<li><a href="#" class="window">공공기관 직원</a></li>
+												<li><a href="#" class="window">공무직&middot;기간제 근로자</a></li>
+												<li><a href="#" class="window">공공근로&middot;단기일자리</a></li>
+												<li><a href="#" class="window">국가&middot;기타&middot;타시도</a></li>
+												<li><a href="#" class="window">수렵면허시험</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li> 				
+						<li>
+							<a href="subpage/subpage2.html">전자민원</a>
+							<div class="width100">
+								<div class="width1200">
+									<ul class="owd">
+										<li class="height112">
+											<span class="twd"><a href="#" class="aheight112">민원종합안내</a></span>
+											<ul class="thwd">
+												<li><a href="#">민원종합안내</a></li>
+												<li><a href="#" class="window">민원서식안내</a></li>
+												<li><a href="#">민원1회방문처리제</a></li>
+												<li><a href="#">사전심사청구제도</a></li>
+												<li><a href="#">민원수수료안내</a></li>
+												<li><a href="#" class="th">구술/전화신청대상민원안내</a></li>
+												<li><a href="#">민원처리현황</a></li>
+												<li><a href="#">민원편의시책</a></li>
+												<li><a href="#">시민행복 민생시책</a></li>
+												<li><a href="#">행정정보 공동이용</a></li>
+												<li><a href="#" class="window">민원사무편람</a></li>	
+											</ul>
+										</li>
+										<li class="height173"> 
+											<span class="twd"><a href="#" class="aheight173">민원신고센터</a></span>	
+											<ul class="thwd">
+												<li><a href="#">국민신문고</a></li>
+												<li><a href="#" class="window">관광불편민원접수</a></li>
+												<li><a href="#" class="window">환경신문고</a></li>
+												<li><a href="#" class="window">규제개혁신문고</a></li>
+												<li><a href="#" class="window">공직비리익명신고센터</a></li>
+												<li><a href="#">가로등고장신고</a></li>
+												<li><a href="#" class="window">식품안전소비자신고센터</a></li>
+												<li><a href="#" class="window">예산낭비신고센터</a></li>
+												<li><a href="#" class="window">지방보조금 부정신고센터</a></li>
+												<li><a href="#" class="window">복지&middot;보조금부정신고센터</a></li>
+												<li><a href="#" class="window">건설공사하도급부조리해소센터</a></li>
+												<li><a href="#">불법숙박업소신고센터</a></li>
+												<li><a href="#" class="window">소극행정신고센터</a></li>
+												<li><a href="#">생활폐기물 불법투기 신고방</a></li>
+												<li><a href="#" class="window">지방기업 규제 애로 신고센터</a></li>				
+											</ul>
+										</li>						
+										<li class="height80"> 
+											<span class="twd"><a href="#" class="aheight80 window_left">편리한 지방세</a></span>
+											<ul class="thwd">
+												<li><a href="#" class="window">지방세 조회납부</a></li>
+												<li><a href="#" class="window">지방세미리계산해보기</a></li>
+												<li><a href="#" class="window">시가표준액 조회</a></li>
+												<li><a href="#" class="window">개별(공동)주택가격 조회</a></li>
+												<li><a href="#" class="window">개별공시지가 조회</a></li>
+											</ul>
+										</li>
+										<li class="height39 window_left"> 
+											<span class="twd"><a href="#" class="aheight39">인터넷 민원발급(정부24)</a></span>
+										</li> 
+										<li class="height39">
+											<span class="twd "><a href="#" class="aheight39 window_left">인터넷 민원처리공개</a></span>
+										</li>
+										<li class="height50">
+											<span class="twd "><a href="#" class="aheight50">과태료알림</a></span>
+											<ul class="thwd">
+												<li><a href="#">세외수입(과태료)알림</a></li>
+												<li><a href="#" class="window">주정차 과태료 검색</a></li>
+											</ul>
+										</li>
+										<li class="height39"> 
+											<span class="twd"><a href="#" class="aheight39 window_left">도로명주소 안내서비스</a></span>	
+										</li>
+										<li class="heigh50"> 
+											<span class="twd"><a href="#" class="aheight50">종합민원실창구안내</a></span>	
+											<ul class="thwd">
+												<li><a href="#">무인민원발급창구안내</a></li>
+												<li><a href="#">종합민원창구안내</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li> 						
+						<li>
+							<a href="subpage/subpage3.html">정보공개</a>
+							<div class="width100">
+								<div class="width1200">
+									<ul class="owd">
+										<li class="height80">
+											<span class="twd"><a href="#" class="aheight80">제주시소식</a></span>
+											<ul class="thwd">
+												<li><a href="#">보도자료</a></li>
+												<li><a href="#">공지사항</a></li>
+												<li><a href="#">사업안내&middot;모집</a></li>
+												<li><a href="#">해명자료</a></li>
+												<li><a href="#">입찰공고</a></li>
+												<li><a href="#">고시/공고</a></li>
+												<li><a href="#">타기관 고시/공고</a></li>
+											</ul>
+										</li>
+										<li class="height39"> 
+											<span class="twd"><a href="#" class="aheight39">2021 주요업무계획</a></span>	
+										</li>
+										<li class="height80"> 
+											<span class="twd"><a href="#" class="aheight80">통계정보</a></span>
+											<ul class="thwd">
+												<li><a href="#">통계연보</a></li>
+												<li><a href="#">사업체조사</a></li>
+												<li><a href="#">광업&middot;제조업 조사</a></li>
+												<li><a href="#">주민등록인구통계</a></li>
+												<li><a href="#">자동차등록현황</a></li>		
+											</ul>
+										</li>
+										<li class="height80"> 
+											<span class="twd"><a href="#" class="aheight80">행정정보공개</a></span>
+											<ul class="thwd">
+												<li><a href="#">사전정보공개</a></li>
+												<li><a href="#">제도안내</a></li>
+												<li><a href="#">법령에의한정보제공</a></li>
+												<li><a href="#">정보보유목록</a></li>
+												<li><a href="#" class="window">정보공개시스템</a></li>
+												<li><a href="#">사전정보공개 게시판</a></li>
+												<li><a href="#" class="window">사회복지시설 운영상황 공개</a></li>
+											</ul>
+										</li> 
+										<li class="height39">
+											<span class="twd "><a href="#" class="aheight39 window_left">예산정보</a></span>
+										</li>
+										<li class="height50">
+											<span class="twd "><a href="#" class="aheight50">예산집행현황 공개</a></span>
+											<ul class="thwd">
+												<li><a href="#">세출예산 집행현황</a></li>
+												<li><a href="#">1억원 이상 사업 추진 현황</a></li>
+											</ul>
+										</li>
+										<li class="heigh50"> 
+											<span class="twd"><a href="#" class="aheight50">업무추진비 공개</a></span>	
+											<ul class="thwd">
+												<li><a href="#">제주시장 업무추진비 공개</a></li>
+												<li><a href="#">부서별 업무추친비 고개</a></li>
+											</ul>
+										</li>
+										<li class="height39">
+											<span class="twd "><a href="#" class="aheight39 window_left">계약정보공개</a></span>
+										</li>
+										<li class="height39">
+											<span class="twd "><a href="#" class="aheight39">공공데이터개방</a></span>
+										</li>
+										<li class="heigh50"> 
+											<span class="twd"><a href="#" class="aheight50">법무정보</a></span>	
+											<ul class="thwd">
+												<li><a href="#" class="window">자치법규</a></li>
+												<li><a href="#" class="window">행정심판</a></li>
+											</ul>
+										</li>
+										<li class="height39">
+											<span class="twd "><a href="#" class="aheight39">부서자료실</a></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li> 
+						<li>
+							<a href="subpage/subpage4.html">제주시소개</a>
+							<div class="width100">
+								<div class="width1200">
+									<ul class="owd">
+										<li class="height50">
+											<span class="twd"><a href="#" class="aheight50 window_left">열린시장실</a></span>
+											<ul class="thwd">
+												<li><a href="#" class="window">오늘의 시정 일정</a></li>
+												<li><a href="#" class="window">현장 365일</a></li>
+												<li><a href="#" class="window">역대시장</a></li>			
+											</ul>
+										</li>
+										<li class="height50"> 
+											<span class="twd"><a href="#" class="aheight50">제주시현황</a></span>
+											<ul class="thwd">
+												<li><a href="#">제주시현황</a></li>
+												<li><a href="#">제주시슬로건</a></li>
+											</ul>
+										</li>
+										<li class="height50"> 
+											<span class="twd"><a href="#" class="aheight50">조직도</a></span>
+											<ul class="thwd">
+												<li><a href="#">조직도</a></li>
+												<li><a href="#">담당자/담당업무검색</a></li>
+												<li><a href="#">인사운영 통계</a></li>
+											</ul>
+										</li>
+										<li class="height50"> 
+											<span class="twd"><a href="#" class="aheight50">국제교류도시</a></span>
+											<ul class="thwd">
+												<li><a href="#">국제자매결연도시</a></li>
+												<li><a href="#">국제우호협력도시</a></li>
+												<li><a href="#">국내자매결연도시</a></li>
+											</ul>
+										</li> 
+										<li class="height50">
+											<span class="twd "><a href="#" class="aheight50">청사안내</a></span>
+											<ul class="thwd">
+												<li><a href="#" class="window">3D청사안내도</a></li>
+												<li><a href="#">주차장</a></li>
+												<li><a href="#">어울림마당</a></li>
+											</ul>
+										</li>
+										<li class="height50">
+											<span class="twd "><a href="#" class="aheight50">역사속 제주</a></span>
+											<ul class="thwd">
+												<li><a href="#">역사속 제주시</a></li>
+												<li><a href="#">역사속 북제주군</a></li>
+											</ul>
+										</li>
+										<li class="heigh39 "> 
+											<span class="twd"><a href="#" class="aheight39 window_left">시정소식지</a></span>	
+										</li>
+										<li class="height39">
+											<span class="twd"><a href="#" class="aheight39 window_left">제주시사진DB</a></span>
+										</li>
+										<li class="height50">
+											<span class="twd "><a href="#" class="aheight50">사진공모전</a></span>
+											<ul class="thwd">
+												<li><a href="#">공모전 소개</a></li>
+												<li><a href="#">공모전 갤러리</a></li>
+												<li><a href="#">드론영상공모전</a></li>
+											</ul>
+										</li>
+										<li class="heigh50"> 
+											<span class="twd"><a href="#" class="aheight50">제주어문양디자인</a></span>	
+											<ul class="thwd">
+												<li><a href="#">문양디자인 소개</a></li>
+												<li><a href="#">문양디자인 사용하기</a></li>
+												<li><a href="#">문양디자인 활용사례</a></li>
+											</ul>
+										</li>
+										<li class="height39">
+											<span class="twd "><a href="#" class="aheight39">찾아오시는 길</a></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li> 
+						<li>
+							<a href="subpage/subpage5.html">분야별정보</a>
+							<div class="width100">
+								<div class="width1200">
+									<ul class="images_area">
+										<li class="menu_images1"><span><a href="#">복지</a></span></li>
+										<li class="menu_images2"><span><a href="#">재난/안전</a></span></li>
+										<li class="menu_images3"><span><a href="#">부동산/주택</a></span></li>
+										<li class="menu_images4"><span><a href="#">교육</a></span></li>
+										<li class="menu_images5"><span><a href="#">교통</a></span></li>
+										<li class="menu_images6"><span><a href="#">문화/체육</a></span></li>
+										<li class="menu_images7"><span><a href="#">생활/환경</a></span></li>
+										<li class="menu_images8"><span><a href="#">예약</a></span></li>
+										<li class="menu_images9"><span><a href="#">공간포털<img src="img/window_icon01.png" alt="윈도우아이콘"/></a></span></li>
+									</ul>
+								</div>
+							</div>
+						</li> 
+						<li>
+							<a href="subpage/subpage6.html">관광정보</a>
+							<div class="width100">
+								<div class="width1200">
+									<ul class="info_images">
+										<li class="info_image1"><a href="#">관광정보<img src="img/window_icon01.png" alt="관광정보"/></a></li>
+										<li class="info_image2"><a href="#">제도관광지도신청<img src="img/window_icon01.png" alt="제주도관광지도신청"/></a></li>
+										<li class="info_image3"><a href="#">제주관광안내책자<img src="img/window_icon01.png" alt="제주관광안내책자"/></a></li>
+										<li class="info_image4"><a href="#">축제행사<img src="img/window_icon01.png" alt="축제행사"/></a></li>
+										<li class="info_image5"><a href="#">탐나오<img src="img/window_icon01.png" alt="탐나오"/></a></li>
+										<li class="info_image6"><a href="#">들불축제<img src="img/window_icon01.png" alt="들불축제"/></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>						
+					</ul>
+					<a href="#" class="menu_btn"><img src="img/menu_btn.png" alt="메뉴버튼"/></a>
+				</div>
+			</div>
+		</div>			
+		<div id="content">							
+			<div class="container">
+				<div class="main_banner">
+					<div class="main_visual">						
+						<ul class="main_visual_img">
+							<li class="banner_img"><a href="#"><img src="img/corona_policy.jpg" alt="코로나선별지료소 운영시간"/></a></li>
+							<li class="banner_img"><a href="#"><img src="img/coronatime.png" alt="코로나선별지료소 운영시간"/></a></li>
+							<li class="banner_img"><a href="#"><img src="img/relax_code.png" alt="제주안심코드"/></a></li>
+							<li class="banner_img"><a href="#"><img src="img/revision.inform.jpg" alt="특별법 개정"/></a></li>
+							<li class="banner_img"><a href="#"><img src="img/Stimulus_check_4.png" alt="4차 지난 지원금 지원"/></a></li>
+							<li class="banner_img"><a href="#"><img src="img/winter_find_campaign.jpg" alt="겨울철 복지사각지대 복지"/></a></li>
+						</ul>						
+						<div class="over_btn">
+							<span class="prev" id="prev">
+								<a href="#" class="ir_pm">뒤로가기</a>
+							</span>
+							<span class="next" id="next">
+								<a href="#" class="ir_pm">앞으로가기</a>
+							</span>
+						</div>
+						<ul class="indicator">
+							<li data-idx="0">1</li>
+							<li data-idx="1">2</li>
+							<li  data-idx="2">3</li>
+							<li data-idx="3">4</li>
+							<li  data-idx="4">5</li>
+							<li data-idx="5">6</li>
+						</ul>
+						<div class="stop_btn">
+							<a href="#"><img src="img/stop_btn.png" alt="정지버튼"/></a>
+						</div>
+					</div>
+					<div class="side_banner">
+						<img src="img/sijang_bg_201218_pc.png" alt="열린시장실사진">
+						<h4><a href="#"><span class="quo_before">소통으로여는</span><br/><span class="quo_after">행복제주시</span><br/><strong>열린시장실</strong></a>
+						<span class="go_btn"><a href="#">Go</a></span>
+						</h4>
+						<ul>
+							<li class="banner_link1"><a href="#">시민행복<br/>메아리방</a></li>
+							<li class="banner_link2"><a href="#">시민과의<br/>약속</a></li>
+							<li class="banner_link3"><a href="#">포토<br/>스토리</a></li>
+						</ul>						
+					</div>
+				</div>
+			</div>											
+			<div class="container">
+				<div class="content01">	
+					<div class="corona_area">
+						<h4><strong>코로나바이러스감염증-19 현황 : 2021</strong>년 <strong>2</strong>월 <strong>26</strong>일 <strong>00</strong>시</h4>
+						<div class="main_box">
+							<div class="box1">
+								<p class="text1">확진</p>
+								<p class="number1"><strong>633</strong></p>
+								<div class="square"></div>
+								<p class="text2">전국 <strong>104,796</strong></p>
+							</div>
+							<div class="box2">
+								<p class="text1">격리해제(완치)</p>
+								<p class="number1">614</p>
+								<div class="square"></div>
+								<p class="text2">전국 96,196</p>
+							</div>
+							<div class="box3">
+								<p class="text1">사망</p>
+								<p class="number1">1</p>
+								<div class="square"></div>
+								<p class="text2">전국 1,740</p>
+							</div>
+							<div class="box4">
+								<p class="text1">검사진행</p>
+								<p class="number1">480</p>
+								<div class="square"></div>
+								<p class="text2">전국 75,288</p>
+							</div>
+							<div class="box5">
+								<p class="text1">자가격리</p>
+								<p class="number2">확진자접촉 <strong>111</strong></p>
+								<div class="square"></div>
+								<p class="number3">해외집국 <strong>232</strong></p>
+							</div>
+						</div>
+						<div class="box6">
+							<ul class="sub_boxmain">
+								<li class="sub_box1"><a href="#">브리핑자료</a></li>
+								<li class="sub_box2"><a href="#">예방행동수칙</a></li>
+								<li class="sub_box3"><a href="#">사회적 거리두기</a></li>	
+								<li class="sub_box4"><a href="#">확진자 동선</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="post_area">											
+						<ul class="tab_navi">
+							<li class="tab_navi1 active"><a href="#">공지사항</a></li>
+							<li><a href="#">사업안내모집</a></li>
+							<li><a href="#">입찰공고</a></li>
+							<li><a href="#">고시공고</a></li>
+							<li><a href="#">타기관 고시공고</a></li>
+							<li class="tab_navi2"><a href="#">자료실</a></li>
+						</ul>
+						<div class="post_text">
+							<ul>
+								<li class="post_text1">
+									<a href="#">
+										<strong class="subject">애월국민체육센터 체력단련실 장애인 프로그램 교실 운영으로 인한 타임별 조정 운영</strong><span class="years">2021-03-29</span>
+										<span class="memo">
+											1. 수영장 개방시간 : 주중 09:00 ~ 21:00 (4타임)
+											1타임▶ 09:00 ~ 11:00,   2타임▶ 13:00 ~ 15:00 
+											3타임▶ 16:00 ~ 18:00,   4타임▶ 19:00 ~ 21:00
+		
+		
+											2. 헬스장 개방시간 : 주중 09:00 ~ 21:00 (4타임)
+											1타임▶ 09:00 ~ 11:00(일반인 이용시간)
+											2타임▶ 13:00 ~ 15:00(장애인 무료교실운영)일반인 이용불가 
+											3타임▶ 16:00 ~ 18:00(일반인 이용시간) 
+											4타임▶ 19:00 ~ 21:00(일반인 이용시간)
+											※ 장애인 프로그램 무료교실 운영기간(2021.4. 1.~ 6. 30.)
+		   
+											3. 주말 및 공휴일 수영, 헬스 개방시간 09:00 ~ 18:00 (3타임)
+											1타임▶ 09:00 ~ 11:00,  2타임▶ 13:00 ~ 15:00 
+											3타임▶ 16:00 ~ 18:00
+					 
+											※ 2시간이용 1시간 방역 및 환기 , 매주 화요일 휴장
+		
+		
+					
+											3. 전화예약 : 반드시 전일(1일전) 본인 예약만 가능 728 ~ 8552
+											접수시간 ⇒ 09:00 ~ 18:00까지(매주화요일 휴관일 화요일 제외)
+		
+		
+											※ 대리접수 불가, 점심시간 12:00 ~13:00 접수 불가
+		
+											4. 개방이용인원 : 수영장 타임 별 15명(남자7명, 여자8명)
+		
+											헬스 무료개방 타임 별 8명
+											(헬스장 마스크 착용 필수, 탈의실, 샤워실 사용 불가)
+		
+											※ 스파(온수탕)사용불가
+		
+											※ 개방시간 각 타임별 30분이후 입장불가
+											  발열체크, QR카드인증 또는 출입 명단 작성(신분증 제시 후 입장)
+											  코로나로 인한 일시적 전기사용불가(드라이기, 고데기 등..)
+										</span>
+									</a>
+								</li>
+								<li class="post_text2">
+									<a href="#">
+										<strong class="subject">2021년 지역사회서비스투자사업 4월 신청(5월 개시) 계획 알림</strong><span class="years">2021-03-25</span>
+										<span class="memo">
+										2021년 4월 지역사회서비스투자사업(5월 개시) 신청계획을 아래와 같이 알려드리오니 
+										서비스 이용을 원하는 분께서는 주소지 읍면 사무소 및 동주민센터로 방문하여 신청하여 주시기 바랍니다. 
+		
+										○ 신청_접수 기간 : 2021.4.1.(목) ~ 2021.4. 9.(금) 
+		
+										○ 서비스 대상자 : 서비스별 차등 기준적용(기준중위소득 120%, 140%, 160%이하) 
+		
+										○ 접 수 처 : 읍면동주민센터(주민등록상 거주지) 
+		
+										○ 사업별 신청ㆍ접수 계획(안) : 12개 사업 
+		
+										○ 사업별 접수인원 
+		
+										1) 아동청소년심리지원서비스 70명(대기자)
+		
+										2) 아동청소년음악멘토링서비스 70명(대기자) 
+		
+										3) 아동청소년건강관리서비스 70명(대기자) 
+		
+										4) 아동청소년비전형성지원서비스 70명(대기자)
+		
+										5) 출산및영유아용품렌탈서비스 50명 
+		
+										6) 영아와부모를위한가족지원예술치료서비스 34명(대기자) 
+		
+										7) 장애아동음악재활지원서비스 20명 
+		
+										8) 임산부토탈케어서비스 20명 
+		
+										9) 성인재활정신건강서비스 20명 
+		
+										10) 성인심리지원서비스 30명(대기자) 
+		
+										11) 어르신건강기능향상서비스 41명(대기자)
+		
+										12) 건강나눔안마서비스 124명(대기자)
+		
+										※ 사업별 세부내역 및 제공기관 현황은 붙임파일을 참고하시기 바랍니다,
+										</span>
+									</a>
+								</li>
+								<li class="post_text3">
+									<a href="#">
+										<strong class="subject">코로나19 우수방역 실내체육시설 공모 안내</strong><span class="years">2021-03-25</span>
+										<span class="memo">
+										❍ 추진방식: 코로나19 방역활동 우수사례 수기 공모
+		
+										❍ 포상내용: 소상공인에 해당하지 않는 실내체육시설 5,000개소 선정하여 포상
+		
+										   * 개소당 100만원
+		
+										❍ 참여방법: 체육시설알리미(www.spoinfo.or.kr)를 통해 온라인 신청 
+		
+										❍ 공모기간: 4월 5일(월) ~ 18일(일)
+		
+										❍ 문 의 처 : 국민체육진흥공단 체육시설안전실 체육시설코로나19지원팀(02-410-1486)
+										</span>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="post_text1">
+									<a href="#">
+										<strong class="subject">2021년 자산형성지원사업(희망키움1, 내일키움, 청년희망키움통장) 7차 모집 및 (희망키움통장2, 청년저축계좌) 3차 모집 일정 안내</strong><span class="years">2021-07-22</span>
+										<span class="memo">
+											2021년 자산형성지원사업(희망키움1, 내일키움, 청년희망키움통장) 7차 모집 및 (희망키움통장2, 청년저축계좌) 3차 모집 일정을 아래와 같이 알려드리오니 신청을 원하는 분께서는 기간 내에 주소지 읍·면사무소 및 동주민센터로 방문하여 신청하여 주시기 바랍니다. 
+
+											* 모집일정 * 
+											- 희망키움1통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 희망키움2통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 내일키움통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 청년희망키움통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 청년저축계좌 : 2021.8.2.(월) ~ 8.19.(목) 
+
+											* 모집장소 : 주소지 읍·면사무소 및 동주민센터 
+
+											* 2021년도 모집 일정 및 자산형성지원사업 세부내용 붙임파일 참고 
+
+											* 자세한 사항은 주소지 읍·면사무소 및 동주민센터 또는 제주시청 기초생활보장과(728-2523)로 문의바랍니다.
+										</span>
+									</a>
+								</li>
+								<li class="post_text2">
+									<a href="#">
+										<strong class="subject">실내 민간체육시설 고용지원 사업 추가 모집 홍보</strong><span class="years">2021-07-12</span>
+										<span class="memo">
+											ㅇ 지원기간: 2021년 7월 ~ 12월(최대 6개월)
+
+											ㅇ 지원대상: 추가 공고일(2021년 7월 12일) 현재 국내 실내 민간체육시설을 운영하는 법인·개인사업자
+											
+											ㅇ 지원내용: 실내 민간체육시설 종사자(트레이너, 코치, 시설운영·관리 등) 인건비 지원
+											
+											ㅇ 지원규모: 1,000명 이상
+											
+											ㅇ 지원금액: 종사자 1인당 월 160만원 지원, 최대 6개월 이내 지원
+											* 사업주 자부담 : 월 160만원 초과 기본급, 4대보험 및 법정수당 등
+											
+											ㅇ 접수기간: 2021년 7월 12일(월) ~ 모집인원 충족시까지
+											
+											ㅇ 신청방법: 고용지원사업 신청 누리집(kspo.keepfit.co.kr)에서 온라인 참여 신청
+											
+											
+											
+											ㅇ 관련문의 : [전 화] 1668-1327 [사업안내] www.kspo.or.kr / spobiz.kspo.or.kr
+										</span>
+									</a>
+								</li>
+								<li class="post_text3">
+									<a href="#">
+										<strong class="subject">2021년 서민층 가스시설 개선사업 추가 모집 공고</strong><span class="years">2021-07-08</span>
+										<span class="memo">
+											2021년도 서민층 가스시설 개선사업 추가 모집에 대해 아래와 같이 안내드리오니, 대상가구는 첨부파일을 참고하여 읍∙면∙동을 통해 신청 바랍니다. 
+
+											❍ 사 업 명: 2021년도 서민층 가스시설 개선사업 
+											
+											❍ 지원대상: 서민층* 120여 가구
+											  * 기초생활수급자, 차상위계층, 소외계층(독거노인, 중증장애인, 기초연금수급자, 소년소녀가장, 한부모가정)
+											
+											❍ 지원내용: LPG호스→금속배관 교체 및 퓨즈콕 등 안전장치 설치 
+											
+											❍ 신청기간: 2021. 7. 13. ~ 2021. 8.12.
+											
+											❍ 접수장소: 주소지 읍∙면∙동 방문 신청 
+											
+											❍첨부서류: 붙임 파일참고
+										</span>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="post_text1">
+									<a href="#">
+										<strong class="subject">애월국민체육센터 체력단련실 장애인 프로그램 교실 운영으로 인한 타임별 조정 운영</strong><span class="years">2021-03-29</span>
+										<span class="memo">
+											1. 수영장 개방시간 : 주중 09:00 ~ 21:00 (4타임)
+											1타임▶ 09:00 ~ 11:00,   2타임▶ 13:00 ~ 15:00 
+											3타임▶ 16:00 ~ 18:00,   4타임▶ 19:00 ~ 21:00
+		
+		
+											2. 헬스장 개방시간 : 주중 09:00 ~ 21:00 (4타임)
+											1타임▶ 09:00 ~ 11:00(일반인 이용시간)
+											2타임▶ 13:00 ~ 15:00(장애인 무료교실운영)일반인 이용불가 
+											3타임▶ 16:00 ~ 18:00(일반인 이용시간) 
+											4타임▶ 19:00 ~ 21:00(일반인 이용시간)
+											※ 장애인 프로그램 무료교실 운영기간(2021.4. 1.~ 6. 30.)
+		   
+											3. 주말 및 공휴일 수영, 헬스 개방시간 09:00 ~ 18:00 (3타임)
+											1타임▶ 09:00 ~ 11:00,  2타임▶ 13:00 ~ 15:00 
+											3타임▶ 16:00 ~ 18:00
+					 
+											※ 2시간이용 1시간 방역 및 환기 , 매주 화요일 휴장
+		
+		
+					
+											3. 전화예약 : 반드시 전일(1일전) 본인 예약만 가능 728 ~ 8552
+											접수시간 ⇒ 09:00 ~ 18:00까지(매주화요일 휴관일 화요일 제외)
+		
+		
+											※ 대리접수 불가, 점심시간 12:00 ~13:00 접수 불가
+		
+											4. 개방이용인원 : 수영장 타임 별 15명(남자7명, 여자8명)
+		
+											헬스 무료개방 타임 별 8명
+											(헬스장 마스크 착용 필수, 탈의실, 샤워실 사용 불가)
+		
+											※ 스파(온수탕)사용불가
+		
+											※ 개방시간 각 타임별 30분이후 입장불가
+											  발열체크, QR카드인증 또는 출입 명단 작성(신분증 제시 후 입장)
+											  코로나로 인한 일시적 전기사용불가(드라이기, 고데기 등..)
+										</span>
+									</a>
+								</li>
+								<li class="post_text2">
+									<a href="#">
+										<strong class="subject">2021년 지역사회서비스투자사업 4월 신청(5월 개시) 계획 알림</strong><span class="years">2021-03-25</span>
+										<span class="memo">
+										2021년 4월 지역사회서비스투자사업(5월 개시) 신청계획을 아래와 같이 알려드리오니 
+										서비스 이용을 원하는 분께서는 주소지 읍면 사무소 및 동주민센터로 방문하여 신청하여 주시기 바랍니다. 
+		
+										○ 신청_접수 기간 : 2021.4.1.(목) ~ 2021.4. 9.(금) 
+		
+										○ 서비스 대상자 : 서비스별 차등 기준적용(기준중위소득 120%, 140%, 160%이하) 
+		
+										○ 접 수 처 : 읍면동주민센터(주민등록상 거주지) 
+		
+										○ 사업별 신청ㆍ접수 계획(안) : 12개 사업 
+		
+										○ 사업별 접수인원 
+		
+										1) 아동청소년심리지원서비스 70명(대기자)
+		
+										2) 아동청소년음악멘토링서비스 70명(대기자) 
+		
+										3) 아동청소년건강관리서비스 70명(대기자) 
+		
+										4) 아동청소년비전형성지원서비스 70명(대기자)
+		
+										5) 출산및영유아용품렌탈서비스 50명 
+		
+										6) 영아와부모를위한가족지원예술치료서비스 34명(대기자) 
+		
+										7) 장애아동음악재활지원서비스 20명 
+		
+										8) 임산부토탈케어서비스 20명 
+		
+										9) 성인재활정신건강서비스 20명 
+		
+										10) 성인심리지원서비스 30명(대기자) 
+		
+										11) 어르신건강기능향상서비스 41명(대기자)
+		
+										12) 건강나눔안마서비스 124명(대기자)
+		
+										※ 사업별 세부내역 및 제공기관 현황은 붙임파일을 참고하시기 바랍니다,
+										</span>
+									</a>
+								</li>
+								<li class="post_text3">
+									<a href="#">
+										<strong class="subject">코로나19 우수방역 실내체육시설 공모 안내</strong><span class="years">2021-03-25</span>
+										<span class="memo">
+										❍ 추진방식: 코로나19 방역활동 우수사례 수기 공모
+		
+										❍ 포상내용: 소상공인에 해당하지 않는 실내체육시설 5,000개소 선정하여 포상
+		
+										   * 개소당 100만원
+		
+										❍ 참여방법: 체육시설알리미(www.spoinfo.or.kr)를 통해 온라인 신청 
+		
+										❍ 공모기간: 4월 5일(월) ~ 18일(일)
+		
+										❍ 문 의 처 : 국민체육진흥공단 체육시설안전실 체육시설코로나19지원팀(02-410-1486)
+										</span>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="post_text1">
+									<a href="#">
+										<strong class="subject">2021년 자산형성지원사업(희망키움1, 내일키움, 청년희망키움통장) 7차 모집 및 (희망키움통장2, 청년저축계좌) 3차 모집 일정 안내</strong><span class="years">2021-07-22</span>
+										<span class="memo">
+											2021년 자산형성지원사업(희망키움1, 내일키움, 청년희망키움통장) 7차 모집 및 (희망키움통장2, 청년저축계좌) 3차 모집 일정을 아래와 같이 알려드리오니 신청을 원하는 분께서는 기간 내에 주소지 읍·면사무소 및 동주민센터로 방문하여 신청하여 주시기 바랍니다. 
+
+											* 모집일정 * 
+											- 희망키움1통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 희망키움2통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 내일키움통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 청년희망키움통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 청년저축계좌 : 2021.8.2.(월) ~ 8.19.(목) 
+
+											* 모집장소 : 주소지 읍·면사무소 및 동주민센터 
+
+											* 2021년도 모집 일정 및 자산형성지원사업 세부내용 붙임파일 참고 
+
+											* 자세한 사항은 주소지 읍·면사무소 및 동주민센터 또는 제주시청 기초생활보장과(728-2523)로 문의바랍니다.
+										</span>
+									</a>
+								</li>
+								<li class="post_text2">
+									<a href="#">
+										<strong class="subject">실내 민간체육시설 고용지원 사업 추가 모집 홍보</strong><span class="years">2021-07-12</span>
+										<span class="memo">
+											ㅇ 지원기간: 2021년 7월 ~ 12월(최대 6개월)
+
+											ㅇ 지원대상: 추가 공고일(2021년 7월 12일) 현재 국내 실내 민간체육시설을 운영하는 법인·개인사업자
+											
+											ㅇ 지원내용: 실내 민간체육시설 종사자(트레이너, 코치, 시설운영·관리 등) 인건비 지원
+											
+											ㅇ 지원규모: 1,000명 이상
+											
+											ㅇ 지원금액: 종사자 1인당 월 160만원 지원, 최대 6개월 이내 지원
+											* 사업주 자부담 : 월 160만원 초과 기본급, 4대보험 및 법정수당 등
+											
+											ㅇ 접수기간: 2021년 7월 12일(월) ~ 모집인원 충족시까지
+											
+											ㅇ 신청방법: 고용지원사업 신청 누리집(kspo.keepfit.co.kr)에서 온라인 참여 신청
+											
+											
+											
+											ㅇ 관련문의 : [전 화] 1668-1327 [사업안내] www.kspo.or.kr / spobiz.kspo.or.kr
+										</span>
+									</a>
+								</li>
+								<li class="post_text3">
+									<a href="#">
+										<strong class="subject">2021년 서민층 가스시설 개선사업 추가 모집 공고</strong><span class="years">2021-07-08</span>
+										<span class="memo">
+											2021년도 서민층 가스시설 개선사업 추가 모집에 대해 아래와 같이 안내드리오니, 대상가구는 첨부파일을 참고하여 읍∙면∙동을 통해 신청 바랍니다. 
+
+											❍ 사 업 명: 2021년도 서민층 가스시설 개선사업 
+											
+											❍ 지원대상: 서민층* 120여 가구
+											  * 기초생활수급자, 차상위계층, 소외계층(독거노인, 중증장애인, 기초연금수급자, 소년소녀가장, 한부모가정)
+											
+											❍ 지원내용: LPG호스→금속배관 교체 및 퓨즈콕 등 안전장치 설치 
+											
+											❍ 신청기간: 2021. 7. 13. ~ 2021. 8.12.
+											
+											❍ 접수장소: 주소지 읍∙면∙동 방문 신청 
+											
+											❍첨부서류: 붙임 파일참고
+										</span>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="post_text1">
+									<a href="#">
+										<strong class="subject">애월국민체육센터 체력단련실 장애인 프로그램 교실 운영으로 인한 타임별 조정 운영</strong><span class="years">2021-03-29</span>
+										<span class="memo">
+											1. 수영장 개방시간 : 주중 09:00 ~ 21:00 (4타임)
+											1타임▶ 09:00 ~ 11:00,   2타임▶ 13:00 ~ 15:00 
+											3타임▶ 16:00 ~ 18:00,   4타임▶ 19:00 ~ 21:00
+		
+		
+											2. 헬스장 개방시간 : 주중 09:00 ~ 21:00 (4타임)
+											1타임▶ 09:00 ~ 11:00(일반인 이용시간)
+											2타임▶ 13:00 ~ 15:00(장애인 무료교실운영)일반인 이용불가 
+											3타임▶ 16:00 ~ 18:00(일반인 이용시간) 
+											4타임▶ 19:00 ~ 21:00(일반인 이용시간)
+											※ 장애인 프로그램 무료교실 운영기간(2021.4. 1.~ 6. 30.)
+		   
+											3. 주말 및 공휴일 수영, 헬스 개방시간 09:00 ~ 18:00 (3타임)
+											1타임▶ 09:00 ~ 11:00,  2타임▶ 13:00 ~ 15:00 
+											3타임▶ 16:00 ~ 18:00
+					 
+											※ 2시간이용 1시간 방역 및 환기 , 매주 화요일 휴장
+		
+		
+					
+											3. 전화예약 : 반드시 전일(1일전) 본인 예약만 가능 728 ~ 8552
+											접수시간 ⇒ 09:00 ~ 18:00까지(매주화요일 휴관일 화요일 제외)
+		
+		
+											※ 대리접수 불가, 점심시간 12:00 ~13:00 접수 불가
+		
+											4. 개방이용인원 : 수영장 타임 별 15명(남자7명, 여자8명)
+		
+											헬스 무료개방 타임 별 8명
+											(헬스장 마스크 착용 필수, 탈의실, 샤워실 사용 불가)
+		
+											※ 스파(온수탕)사용불가
+		
+											※ 개방시간 각 타임별 30분이후 입장불가
+											  발열체크, QR카드인증 또는 출입 명단 작성(신분증 제시 후 입장)
+											  코로나로 인한 일시적 전기사용불가(드라이기, 고데기 등..)
+										</span>
+									</a>
+								</li>
+								<li class="post_text2">
+									<a href="#">
+										<strong class="subject">2021년 지역사회서비스투자사업 4월 신청(5월 개시) 계획 알림</strong><span class="years">2021-03-25</span>
+										<span class="memo">
+										2021년 4월 지역사회서비스투자사업(5월 개시) 신청계획을 아래와 같이 알려드리오니 
+										서비스 이용을 원하는 분께서는 주소지 읍면 사무소 및 동주민센터로 방문하여 신청하여 주시기 바랍니다. 
+		
+										○ 신청_접수 기간 : 2021.4.1.(목) ~ 2021.4. 9.(금) 
+		
+										○ 서비스 대상자 : 서비스별 차등 기준적용(기준중위소득 120%, 140%, 160%이하) 
+		
+										○ 접 수 처 : 읍면동주민센터(주민등록상 거주지) 
+		
+										○ 사업별 신청ㆍ접수 계획(안) : 12개 사업 
+		
+										○ 사업별 접수인원 
+		
+										1) 아동청소년심리지원서비스 70명(대기자)
+		
+										2) 아동청소년음악멘토링서비스 70명(대기자) 
+		
+										3) 아동청소년건강관리서비스 70명(대기자) 
+		
+										4) 아동청소년비전형성지원서비스 70명(대기자)
+		
+										5) 출산및영유아용품렌탈서비스 50명 
+		
+										6) 영아와부모를위한가족지원예술치료서비스 34명(대기자) 
+		
+										7) 장애아동음악재활지원서비스 20명 
+		
+										8) 임산부토탈케어서비스 20명 
+		
+										9) 성인재활정신건강서비스 20명 
+		
+										10) 성인심리지원서비스 30명(대기자) 
+		
+										11) 어르신건강기능향상서비스 41명(대기자)
+		
+										12) 건강나눔안마서비스 124명(대기자)
+		
+										※ 사업별 세부내역 및 제공기관 현황은 붙임파일을 참고하시기 바랍니다,
+										</span>
+									</a>
+								</li>
+								<li class="post_text3">
+									<a href="#">
+										<strong class="subject">코로나19 우수방역 실내체육시설 공모 안내</strong><span class="years">2021-03-25</span>
+										<span class="memo">
+										❍ 추진방식: 코로나19 방역활동 우수사례 수기 공모
+		
+										❍ 포상내용: 소상공인에 해당하지 않는 실내체육시설 5,000개소 선정하여 포상
+		
+										   * 개소당 100만원
+		
+										❍ 참여방법: 체육시설알리미(www.spoinfo.or.kr)를 통해 온라인 신청 
+		
+										❍ 공모기간: 4월 5일(월) ~ 18일(일)
+		
+										❍ 문 의 처 : 국민체육진흥공단 체육시설안전실 체육시설코로나19지원팀(02-410-1486)
+										</span>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="post_text1">
+									<a href="#">
+										<strong class="subject">2021년 자산형성지원사업(희망키움1, 내일키움, 청년희망키움통장) 7차 모집 및 (희망키움통장2, 청년저축계좌) 3차 모집 일정 안내</strong><span class="years">2021-07-22</span>
+										<span class="memo">
+											2021년 자산형성지원사업(희망키움1, 내일키움, 청년희망키움통장) 7차 모집 및 (희망키움통장2, 청년저축계좌) 3차 모집 일정을 아래와 같이 알려드리오니 신청을 원하는 분께서는 기간 내에 주소지 읍·면사무소 및 동주민센터로 방문하여 신청하여 주시기 바랍니다. 
+
+											* 모집일정 * 
+											- 희망키움1통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 희망키움2통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 내일키움통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 청년희망키움통장 : 2021.8.2.(월) ~ 8.19.(목) 
+											- 청년저축계좌 : 2021.8.2.(월) ~ 8.19.(목) 
+
+											* 모집장소 : 주소지 읍·면사무소 및 동주민센터 
+
+											* 2021년도 모집 일정 및 자산형성지원사업 세부내용 붙임파일 참고 
+
+											* 자세한 사항은 주소지 읍·면사무소 및 동주민센터 또는 제주시청 기초생활보장과(728-2523)로 문의바랍니다.
+										</span>
+									</a>
+								</li>
+								<li class="post_text2">
+									<a href="#">
+										<strong class="subject">실내 민간체육시설 고용지원 사업 추가 모집 홍보</strong><span class="years">2021-07-12</span>
+										<span class="memo">
+											ㅇ 지원기간: 2021년 7월 ~ 12월(최대 6개월)
+
+											ㅇ 지원대상: 추가 공고일(2021년 7월 12일) 현재 국내 실내 민간체육시설을 운영하는 법인·개인사업자
+											
+											ㅇ 지원내용: 실내 민간체육시설 종사자(트레이너, 코치, 시설운영·관리 등) 인건비 지원
+											
+											ㅇ 지원규모: 1,000명 이상
+											
+											ㅇ 지원금액: 종사자 1인당 월 160만원 지원, 최대 6개월 이내 지원
+											* 사업주 자부담 : 월 160만원 초과 기본급, 4대보험 및 법정수당 등
+											
+											ㅇ 접수기간: 2021년 7월 12일(월) ~ 모집인원 충족시까지
+											
+											ㅇ 신청방법: 고용지원사업 신청 누리집(kspo.keepfit.co.kr)에서 온라인 참여 신청
+											
+											
+											
+											ㅇ 관련문의 : [전 화] 1668-1327 [사업안내] www.kspo.or.kr / spobiz.kspo.or.kr
+										</span>
+									</a>
+								</li>
+								<li class="post_text3">
+									<a href="#">
+										<strong class="subject">2021년 서민층 가스시설 개선사업 추가 모집 공고</strong><span class="years">2021-07-08</span>
+										<span class="memo">
+											2021년도 서민층 가스시설 개선사업 추가 모집에 대해 아래와 같이 안내드리오니, 대상가구는 첨부파일을 참고하여 읍∙면∙동을 통해 신청 바랍니다. 
+
+											❍ 사 업 명: 2021년도 서민층 가스시설 개선사업 
+											
+											❍ 지원대상: 서민층* 120여 가구
+											  * 기초생활수급자, 차상위계층, 소외계층(독거노인, 중증장애인, 기초연금수급자, 소년소녀가장, 한부모가정)
+											
+											❍ 지원내용: LPG호스→금속배관 교체 및 퓨즈콕 등 안전장치 설치 
+											
+											❍ 신청기간: 2021. 7. 13. ~ 2021. 8.12.
+											
+											❍ 접수장소: 주소지 읍∙면∙동 방문 신청 
+											
+											❍첨부서류: 붙임 파일참고
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="over_btn">
+							<span class="prev">
+								<a href="#" class="ir_pm">뒤로가기</a>
+							</span>
+							<span class="next">
+								<a href="" class="ir_pm">앞으로가기</a>
+							</span>
+						</div>	
+						<div class="more_btn1"><a href="#" class="ir_pm">더보기</a></div>
+					</div>
+					<div class="post_imagerea">
+						<ul class="slideUl">
+							<li><a href="#" class="image"><img src="img/corona_euc.jpg" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/crimes_sex.jpg" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/defaulter_2020.png" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/education_.png" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/Legal_local_income_tax.png" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/letter_disaster.png" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/report_center.jpg" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/sale_campaign.png" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/Samiljeol_logo.png" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/support_campaign.png" alt="성범죄신고사진"/></a></li>
+							<li><a href="#" class="image"><img src="img/Yongnuni_limit.png" alt="성범죄신고사진"/></a></li>
+						</ul>
+						<div class="over_btn">
+							<span class="prev">
+								<a href="#" class="ir_pm">뒤로가기</a>
+							</span>
+							<span class="next">
+								<a href="#" class="ir_pm">앞으로가기</a>
+							</span>
+						</div>	
+						<div class="list_btn">
+							<a href="#" class="ir_pm">리스트버튼</a>
+						</div>
+					</div>	
+					<div class="popup" id="popup">
+						<div class="popup-head">
+							<div class="title"><h4>제주시 알리미</h4></div>
+							<button class="close-button">&times;</button>
+						</div>
+						<div class="popup-body">
+							<ul>
+								<li><a href="#"><img src="img/corona_euc.jpg" alt=""></a></li>
+								<li><a href="#"><img src="img/crimes_sex.jpg" alt=""></a></li>
+								<li><a href="#"><img src="img/defaulter_2020.png" alt=""></a></li>
+								<li><a href="#"><img src="img/education_.png" alt=""></a></li>
+								<li><a href="#"><img src="img/Legal_local_income_tax.png" alt=""></a></li>
+								<li><a href="#"><img src="img/letter_disaster.png" alt=""></a></li>
+								<li><a href="#"><img src="img/report_center.jpg" alt=""></a></li>
+								<li><a href="#"><img src="img/sale_campaign.png" alt=""></a></li>
+								<li><a href="#"><img src="img/Samiljeol_logo.png" alt=""></a></li>
+								<li><a href="#"><img src="img/support_campaign.png" alt=""></a></li>
+								<li><a href="#"><img src="img/Yongnuni_limit.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>								
+				</div>
+			</div>
+				<div class="container">
+					<div class="content02"> 
+						<div class="letter_main">
+							<h4>제주시 소식 문화행사</h4>
+							<a href="#" class="more"><img src="img/more_icon.png" alt="더보기란"/></a>
+								<div class="letter01">
+									<a href="#">
+									<img src="img/new_no_images3.jpg" alt="코로나지도단속사진"/>
+									<div class="jejutext_area">
+										<strong class="subject">코로나19 취약 위생업소 집중점검 및 지도단속 추진</strong><span class="years">2021-04-02</span>
+										<span class="memo">
+											제주시는 2021년 1월 1일 기준 개별공시지가 326,584필지에 대해 주민열람 및 의견 제출을 받는다고 밝혔다.
+		
+											❍ 해당 열람 및 의견 제출은 오는 4월 5일부터 26일까지 제주시청 종합민원실, 읍․면사무소, 동주민센터 또는 제주시 홈페이지(부동산/주택＞부동산정보통합열람)에서 가능하다.
+		
+											❍ 공시지가 조정에 대한 의견이 있을 경우, 코로나19 확산 방지를 위해 가급적 온라인(시 홈페이지) 또는 팩스(☎064 –728-2149)를 이용해 신청해줄 것을 당부한다.
+		
+											제주시는 제출된 의견에 대해 표준지 또는 인근 토지의 가격균형 유지, 토지이용현황 등을 조사할 예정이며, 감정평가사가 재검증한 후 제주특별자치도 부동산가격공시위원회 심의를 거쳐 오는 5월 31일 최종 결정‧공시하게 된다.
+		
+											❍ 한편, 개별공시지가 산정에 기준이 되는 표준지 공시지가 상승률은 2020년 4.06%에서 2021년 8.05%로 조정되었으며, 전국평균 상승률(10.37%)보다 다소 낮으나 이는 국토교통부 부동산 공시가격 현실화 계획에 의해 반영된 것으로 분석되고 있다.
+		
+											제주시(종합민원실)에서는 조세 및 기초연금 수급 선정 등 각종 정책의 기준으로 공시지가가 활용되므로 시민들의 피해를 최소화하기 위해 점진적 조정이 이뤄질 수 있도록 중앙부처에 지속적으로 건의해 나가겠다고 말했다.
+										</span>
+									</div>
+								</a>
+							</div>			
+							<div class="letter01">
+								<a href="#">
+									<img src="img/news_no_image5.jpg" alt="공시지가 열람사진"/>
+										<div class="jejutext_area">
+										<strong class="subject">'21년 1월 1일 기준 공시지가 열람 및 의견제출 실시</strong>
+										<span class="years">2021-04-01</span>
+										<span class="memo">
+											제주시는 2021년 1월 1일 기준 개별공시지가 326,584필지에 대해 주민열람 및 의견 제출을 받는다고 밝혔다.
+		
+											❍ 해당 열람 및 의견 제출은 오는 4월 5일부터 26일까지 제주시청 종합민원실, 읍․면사무소, 동주민센터 또는 제주시 홈페이지(부동산/주택＞부동산정보통합열람)에서 가능하다.
+		
+											❍ 공시지가 조정에 대한 의견이 있을 경우, 코로나19 확산 방지를 위해 가급적 온라인(시 홈페이지) 또는 팩스(☎064 –728-2149)를 이용해 신청해줄 것을 당부한다.
+		
+											제주시는 제출된 의견에 대해 표준지 또는 인근 토지의 가격균형 유지, 토지이용현황 등을 조사할 예정이며, 감정평가사가 재검증한 후 제주특별자치도 부동산가격공시위원회 심의를 거쳐 오는 5월 31일 최종 결정‧공시하게 된다.
+		
+											❍ 한편, 개별공시지가 산정에 기준이 되는 표준지 공시지가 상승률은 2020년 4.06%에서 2021년 8.05%로 조정되었으며, 전국평균 상승률(10.37%)보다 다소 낮으나 이는 국토교통부 부동산 공시가격 현실화 계획에 의해 반영된 것으로 분석되고 있다.
+		
+											제주시(종합민원실)에서는 조세 및 기초연금 수급 선정 등 각종 정책의 기준으로 공시지가가 활용되므로 시민들의 피해를 최소화하기 위해 점진적 조정이 이뤄질 수 있도록 중앙부처에 지속적으로 건의해 나가겠다고 말했다.
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="letter01">
+								<a href="#">
+									<img src="img/news_no_image4.jpg" alt="조사요원 모집사진"/>
+									<div class="jejutext_area">
+										<strong class="subject">제주시, 2020년 기준 경제총조사 조사요원 모집</strong>
+										<span class="years">2021-03-31</span>
+										<span class="memo">
+											제주시는 6~7월에 실시되는 2020년 기준 경제총조사 조사요원 140명을 모집한다고 밝혔다.
+		
+											경제총조사는 산업 전반의 구조와 분포에 관한 사항을 파악하기 위해 전국의 사업체를 대상으로 5년마다 실시하는 조사로, 조사결과는 경제 및 산업정책 수립의 기초자료로 활용된다.
+		
+											조사요원 모집기간은 오는 4월 5일부터 15일까지이며, 읍·면사무소 및 동주민센터로 신청서를 제출하면 된다. 신청자격은 만 18세 이상으로 채용기간 중 조사에 전념할 수 있는 사람이라면 누구나 지원이 가능하며, 통계조사 경험이 있는 사람은 채용 시 우대한다.
+		
+											이번에 실시되는 경제총조사는 2020. 12. 31.기준으로 산업 규모 등을 고려하여 전수조사와 표본조사를 병행하여 실시하며, 6월 14일부터 7월 9일까지 온라인 조사가 진행되고, 6월 16일부터 7월 30일까지 현장 방문조사가 진행될 계획이다.
+		
+											기타 자세한 사항은 제주시 총무과(728-2093)나 읍·면사무소 및 동주민센터로 문의하면 된다.
+										</span>
+									</div>
+								</a>
+							</div>	
+						</div>
+						<div class="letter_event">
+							<h4>문화행사</h4>
+							<a href="#" class="more"><img src="img/more_icon.png" alt="더보기란"/></a>
+							<div class="letter04"><img src="img/no_evt.png" alt="진행중행사없음사진" /></div>
+						</div>
+					</div>
+				</div>
+			<div class="content03">				
+				<div class="container">
+					<div class="quike_main">
+						<div class="quike_menu">
+							<ul>
+								<li><a href="#"><img src="img/quickMenu1.png" alt=""/>제주시사진DB</a></li>
+								<li><a href="#"><img src="img/quickMenu2.png" alt=""/>제주시 민원안내</a></li>
+								<li><a href="#"><img src="img/quickMenu3.png" alt=""/>열린 제주시eBOOK</a></li>
+								<li><a href="#"><img src="img/quickMenu4.png" alt=""/>행복지도 서비스</a></li>
+								<li><a href="#"><img src="img/quickMenu5.png" alt=""/>제주도 SNS모음</a></li>
+								<li><a href="#"><img src="img/quickMenu6.png" alt=""/>읍&middot;면&middot;동 바로가기</a></li>
+							</ul>
+						</div>
+						<div class="quike_menu01">
+							<ul>
+								<li class="user_service">
+									<h4>시민</h4>
+									<ul class="service_url">									
+										<li><a href="#">통계연보</a></li>
+										<li><a href="#">물가정보</a></li>
+										<li><a href="#">착한가격업소</a></li>
+										<li><a href="#">유가정보</a></li>
+										<li><a href="#">제주정착주민자료실</a></li>
+										<li><a href="#">민간보조금관리</a></li>
+										<li><a href="#">건축물분양정보</a></li>
+										<li><a href="#">사고/팔고</a></li>
+										<li><a href="#">예산정보</a></li>
+										<li><a href="#">부동산정보통합열람</a></li>
+										<li><a href="#">제주버스정보시스템</a></li>
+									</ul>
+								</li>
+								<li class="user_service">
+									<h4>기업인</h4>
+									<ul class="service_url">									
+										<li><a href="#">통계연보</a></li>
+										<li><a href="#">물가정보</a></li>
+										<li><a href="#">착한가격업소</a></li>
+										<li><a href="#">유가정보</a></li>
+										<li><a href="#">제주정착주민자료실</a></li>
+										<li><a href="#">민간보조금관리</a></li>
+										<li><a href="#">건축물분양정보</a></li>
+										<li><a href="#">사고/팔고</a></li>
+										<li><a href="#">예산정보</a></li>
+										<li><a href="#">부동산정보통합열람</a></li>
+										<li><a href="#">제주버스정보시스템</a></li>
+									</ul>
+								</li>
+								<li class="user_service">
+									<h4>관광객</h4>
+									<ul class="service_url">									
+										<li><a href="#">통계연보</a></li>
+										<li><a href="#">물가정보</a></li>
+										<li><a href="#">착한가격업소</a></li>
+										<li><a href="#">유가정보</a></li>
+										<li><a href="#">제주정착주민자료실</a></li>
+										<li><a href="#">민간보조금관리</a></li>
+										<li><a href="#">건축물분양정보</a></li>
+										<li><a href="#">사고/팔고</a></li>
+										<li><a href="#">예산정보</a></li>
+										<li><a href="#">부동산정보통합열람</a></li>
+										<li><a href="#">제주버스정보시스템</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="area_menu">
+							<ul>
+								<li class="area_menufir"><a href="#"><img src="img/area1_icon_out.png" alt="복지아이콘" onmouseover="this.src='img/area1_icon_on.png'" onmouseout="this.src='img/area1_icon_out.png'"/>복지</a></li>
+								<li><a href="#"><img src="img/area2_icon_out.png" alt="재난/안전아이콘" onmouseover="this.src='img/area2_icon_on.png'" onmouseout="this.src='img/area2_icon_out.png'"/>재난/안전</a></li>
+								<li><a href="#"><img src="img/area3_icon_out.png" alt="부동산/주택아이콘" onmouseover="this.src='img/area3_icon_on.png'" onmouseout="this.src='img/area3_icon_out.png'"/>부동산/주택</a></li>
+								<li><a href="#"><img src="img/area4_icon_out.png" alt="교육아이콘" onmouseover="this.src='img/area4_icon_on.png'" onmouseout="this.src='img/area4_icon_out.png'"/>교육</a></li>
+								<li><a href="#"><img src="img/area5_icon_out.png" alt="교통아이콘" onmouseover="this.src='img/area5_icon_on.png'" onmouseout="this.src='img/area5_icon_out.png'"/>교통</a></li>
+								<li><a href="#"><img src="img/area6_icon_out.png" alt="문화/체육아이콘" onmouseover="this.src='img/area6_icon_on.png'" onmouseout="this.src='img/area6_icon_out.png'"/>문화/체육</a></li>
+								<li><a href="#"><img src="img/area7_icon_out.png" alt="생활/환경아이콘" onmouseover="this.src='img/area7_icon_on.png'" onmouseout="this.src='img/area7_icon_out.png'"/>생활/환경</a></li>
+								<li><a href="#"><img src="img/area8_icon_out.png" alt="예약아이콘" onmouseover="this.src='img/area8_icon_on.png'" onmouseout="this.src='img/area8_icon_out.png'"/>예약</a></li>
+								<li class="area_menula"><a href="#"><img src="img/area9_icon_out.png" alt="공간포탈아이콘" onmouseover="this.src='img/area9_icon_on.png'" onmouseout="this.src='img/area9_icon_out.png'"/>공간포탈</a></li>
+							</ul>
+							<span class="window_icon" >
+								<img src="img/new_window_icon.png" alt="윈도우아이콘"/>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>		
+		<div id="footer">
+			<div class="container">
+				<div class="footer_box">
+					<ul class="twd">
+						<li><span>실국홈페이지</span><span class="btn1 ir_pm">바로가기</span>
+							<ul class="twd1">
+								<li><h3>실국홈페이지</h3>
+									<ul>
+										<li><a href="#">시장실</a></li>
+										<li><a href="#">부시장실</a></li>
+										<li><a href="#">공보실</a></li>
+										<li><a href="#">종합민원실</a></li>
+										<li><a href="#">자치행정국</a></li>
+										<li><a href="#">안전교통국</a></li>
+										<li><a href="#">복지위생국</a></li>	
+										<li><a href="#">문화관광체육국</a></li>	
+										<li><a href="#">청정환경국</a></li>	
+										<li><a href="#">농수축산경제국</a></li>	
+										<li><a href="#">도시건설국</a></li>	
+										<li><a href="#">제주보건소</a></li>	
+										<li><a href="#">서부보건소</a></li>	
+										<li><a href="#">동부보건소</a></li>	
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><span>읍&middot;면&middot;동</span><span class="btn2 ir_pm">바로가기</span>
+							<ul class="twd2">
+								<li><h3>읍&middot;면&middot;동</h3>
+									<ul>
+										<li><a href="#">한림읍</a></li>
+										<li><a href="#">애월읍</a></li>
+										<li><a href="#">구좌읍</a></li>
+										<li><a href="#">조천읍</a></li>
+										<li><a href="#">한경면</a></li>
+										<li><a href="#">추자면</a></li>
+										<li><a href="#">우도면</a></li>	
+										<li><a href="#">일도1동</a></li>	
+										<li><a href="#">일도2동</a></li>	
+										<li><a href="#">이도1동</a></li>	
+										<li><a href="#">이도2동</a></li>	
+										<li><a href="#">삼도1동</a></li>	
+										<li><a href="#">삼도2동</a></li>	
+										<li><a href="#">용담1동</a></li>	
+										<li><a href="#">용담2동</a></li>	
+										<li><a href="#">건입동</a></li>	
+										<li><a href="#">화북동</a></li>	
+										<li><a href="#">삼양동</a></li>	
+										<li><a href="#">봉개동</a></li>	
+										<li><a href="#">아라동</a></li>	
+										<li><a href="#">오라동</a></li>	
+										<li><a href="#">연동</a></li>	
+										<li><a href="#">노형동</a></li>	
+										<li><a href="#">외도동</a></li>	
+										<li><a href="#">이호동</a></li>	
+										<li><a href="#">도두동</a></li>	
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><span>제주의마을</span><span class="btn3 ir_pm">바로가기</span>
+							<ul class="twd3">
+								<li><h3>제주의마을</h3>
+									<ul>
+										<li><a href="#">== 한림읍 ==</a></li>
+										<li><a href="#">귀덕1리</a></li>
+										<li><a href="#">귀덕2리</a></li>
+										<li><a href="#">귀덕3리</a></li>
+										<li><a href="#">수원리</a></li>
+										<li><a href="#">한수리</a></li>
+										<li><a href="#">대림리</a></li>
+										<li><a href="#">한림1리</a></li>
+										<li><a href="#">한림2리</a></li>
+										<li><a href="#">한림3리</a></li>
+										<li><a href="#">강구리</a></li>
+										<li><a href="#">상대리</a></li>
+										<li><a href="#">동명리</a></li>
+										<li><a href="#">명월리</a></li>
+										<li><a href="#">상명리</a></li>
+										<li><a href="#">월림리</a></li>
+										<li><a href="#">금악리</a></li>
+										<li><a href="#">옹포리</a></li>
+										<li><a href="#">협재리</a></li>
+										<li><a href="#">금능리</a></li>
+										<li><a href="#">월령리</a></li>
+										<li><a href="#">비양리</a></li>
+										<li><a href="#">== 애월읍 ==</a></li>
+										<li><a href="#">애월리</a></li>
+										<li><a href="#">곽지리</a></li>
+										<li><a href="#">금성리</a></li>
+										<li><a href="#">봉성리</a></li>
+										<li><a href="#">어음1리</a></li>
+										<li><a href="#">어음2리</a></li>
+										<li><a href="#">납읍리</a></li>
+										<li><a href="#">상가리</a></li>
+										<li><a href="#">하가리</a></li>
+										<li><a href="#">소길리</a></li>
+										<li><a href="#">장전리</a></li>
+										<li><a href="#">유수암리</a></li>
+										<li><a href="#">신엄리</a></li>
+										<li><a href="#">중엄리</a></li>
+										<li><a href="#">구엄리</a></li>
+										<li><a href="#">용흥리</a></li>
+										<li><a href="#">고내리</a></li>
+										<li><a href="#">하귀1리</a></li>
+										<li><a href="#">하귀2리</a></li>
+										<li><a href="#">상귀리</a></li>
+										<li><a href="#">수산리</a></li>
+										<li><a href="#">고성1리</a></li>
+										<li><a href="#">고성2리</a></li>
+										<li><a href="#">광령1리</a></li>
+										<li><a href="#">광령2리</a></li>
+										<li><a href="#">광령3리</a></li>
+										<li><a href="#">== 구좌읍 ==</a></li>
+										<li><a href="#">동복리</a></li>
+										<li><a href="#">김녕리</a></li>
+										<li><a href="#">덕천리</a></li>
+										<li><a href="#">월정리</a></li>
+										<li><a href="#">행원리</a></li>
+										<li><a href="#">한동리</a></li>
+										<li><a href="#">평대리</a></li>
+										<li><a href="#">송당리</a></li>
+										<li><a href="#">세화리</a></li>
+										<li><a href="#">상도리</a></li>
+										<li><a href="#">하도리</a></li>
+										<li><a href="#">종달리</a></li>
+										<li><a href="#">== 조천읍 ==</a></li>
+										<li><a href="#">신촌리</a></li>
+										<li><a href="#">조천리</a></li>
+										<li><a href="#">신흥리</a></li>
+										<li><a href="#">북촌리</a></li>
+										<li><a href="#">선흘1리</a></li>
+										<li><a href="#">선흘2리</a></li>
+										<li><a href="#">와산리</a></li>
+										<li><a href="#">대흘1리</a></li>
+										<li><a href="#">대흘2리</a></li>
+										<li><a href="#">와흘리</a></li>
+										<li><a href="#">함덕리</a></li>
+										<li><a href="#">== 한경면 ==</a></li>
+										<li><a href="#">판포리</a></li>
+										<li><a href="#">금등리</a></li>
+										<li><a href="#">한원리</a></li>
+										<li><a href="#">두모리</a></li>
+										<li><a href="#">신창리</a></li>
+										<li><a href="#">용당리</a></li>
+										<li><a href="#">용수리</a></li>
+										<li><a href="#">고산1리</a></li>
+										<li><a href="#">고산2리</a></li>
+										<li><a href="#">조수1리</a></li>
+										<li><a href="#">조수2리</a></li>
+										<li><a href="#">낙천리</a></li>
+										<li><a href="#">저지리</a></li>
+										<li><a href="#">청수리</a></li>
+										<li><a href="#">산양리</a></li>
+										<li><a href="#">== 추자면 ==</a></li>
+										<li><a href="#">대서리</a></li>
+										<li><a href="#">영흥리</a></li>
+										<li><a href="#">묵리</a></li>
+										<li><a href="#">신양1리</a></li>
+										<li><a href="#">신양2리</a></li>
+										<li><a href="#">예초리</a></li>
+										<li><a href="#">== 우도면 ==</a></li>
+										<li><a href="#">서광리</a></li>
+										<li><a href="#">천진리</a></li>
+										<li><a href="#">조일리</a></li>
+										<li><a href="#">오봉리</a></li>				
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><span>주민자치센터</span><span class="btn4 ir_pm">바로가기</span>
+							<ul class="twd4">
+								<li><h3>주민자치센터</h3>
+									<ul>
+										<li><a href="#">일도1</a></li>
+										<li><a href="#">일도2</a></li>
+										<li><a href="#">이도1</a></li>
+										<li><a href="#">이도2</a></li>
+										<li><a href="#">삼도1</a></li>
+										<li><a href="#">삼도2</a></li>
+										<li><a href="#">용담1</a></li>	
+										<li><a href="#">용담2</a></li>	
+										<li><a href="#">건입동</a></li>	
+										<li><a href="#">화북동</a></li>	
+										<li><a href="#">삼양동</a></li>	
+										<li><a href="#">봉개동</a></li>	
+										<li><a href="#">아라동</a></li>	
+										<li><a href="#">오라동</a></li>	
+										<li><a href="#">연동</a></li>	
+										<li><a href="#">노형동</a></li>	
+										<li><a href="#">외도동</a></li>	
+										<li><a href="#">이호동</a></li>	
+										<li><a href="#">도두동</a></li>	
+										<li><a href="#">한림읍</a></li>	
+										<li><a href="#">애월읍</a></li>	
+										<li><a href="#">구좌읍</a></li>	
+										<li><a href="#">조천읍</a></li>	
+										<li><a href="#">한경면</a></li>	
+										<li><a href="#">추자면</a></li>	
+										<li><a href="#">우도면</a></li>	
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><span>정보화마을</span><span class="btn5 ir_pm">바로가기</span>
+							<ul class="twd5">
+								<li><h3>정보화마을</h3>
+									
+									<ul>
+										<li><a href="#">영평정보화마을</a></li>
+										<li><a href="#">김녕정보화마을</a></li>
+										<li><a href="#">저지정보화마을</a></li>
+										<li><a href="#">상명정보화마을</a></li>
+										<li><a href="#">도두정보화마을</a></li>		
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="box_la"><span>주요사이트</span><span class="btn6 ir_pm">바로가기</span>
+							<ul class="twd6">
+								<li><h3>주요사이트</h3>
+									<ul>
+										<li><a href="#">e-체송함</a></li>
+										<li><a href="#">주차장 정보</a></li>
+										<li><a href="#">노루생태관찰원</a></li>
+										<li><a href="#">대형페기물신청</a></li>
+										<li><a href="#">제주들불축제</a></li>
+										<li><a href="#">별빛누리공원</a></li>
+										<li><a href="#">제주아트센터</a></li>	
+										<li><a href="#">제주절물휴양림</a></li>	
+										<li><a href="#">제주동자석</a></li>	
+										<li><a href="#">제주보건소</a></li>	
+										<li><a href="#">제주사진DB</a></li>	
+										<li><a href="#">열린제주시eBook</a></li>	
+										<li><a href="#">제주시평생학습관</a></li>	
+										<li><a href="#">제주재난안전대책본부</a></li>	
+										<li><a href="#">제주특별자치도 공공도서관</a></li>	
+										<li><a href="#">차고지증명제</a></li>	
+										<li><a href="#">청소년성문화센터</a></li>	
+										<li><a href="#">청소년수련관</a></li>	
+										<li><a href="#">제주시체육시설</a></li>	
+										<li><a href="#">제주시 에코촌 유스호스텔</a></li>	
+										<li><a href="#">제주예술단</a></li>					
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>				
+				</div>	
+				<div class="footer_box2">
+					<div class="footer_link">
+						<ul>
+							<li><a href="#"><span>개인정보 처리방침</span></a></li>
+							<li><a href="#">영상정보 처리방침</a></li>
+							<li><a href="#">저작권보호정책</a></li>
+							<li><a href="#">이용안내</a></li>
+							<li><a href="#">홈페이지 개선의견</a></li>
+							<li class="footer_linkla"><a href="#">사이트맵</a></li>
+						</ul>
+					</div>
+					<div class="footer_sns">
+						<ul>
+							<li><a href="https://www.facebook.com/wowjejusi"><img src="img/sns_facebook(1).png" alt="페이스북"/></a></li>
+							<li><a href="https://story.kakao.com/ch/jejusi"><img src="img/sns_kakaostory(1).png" alt="카카오스토리"/></a></li>
+							<li><a href="https://blog.naver.com/wowjejusi"><img src="img/sns_naverblog(1).png" alt="네이버블로그"/></a></li>
+							<li><a href="https://www.youtube.com/channel/UCqt-wpXEHWSoZ6eQJZPX2CA"><img src="img/sns_youtube(1).png" alt="유투브"/></a></li>
+							<li><a href="https://www.instagram.com/wowjejusi/"><img src="img/sns_insta(1).png" alt="인스타"/></a></li>
+							<li class="phon">
+								<div class="number">
+									(064) <strong>120</strong><br/><span>제주120만덕콜센터</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="address">
+						<address>(63208) 제주특별자치도 제주시 광양9길 10, 대표전화：064-120, 10, Gwangyang 9-gil, Jeju-si, Jeju-do, 63208, Republic of Korea</address>
+						<p>Copyright 1999 JEJU-SI. All rights reserved.</p>
+					</div>
+					<a href="http://www.wa.or.kr/board/list.asp?BoardID=0006" class="wa_icon"><img src="img/mark_wa.png" alt="한국장애인단체로 가기"/></a>
+				</div>					
+			</div>
+		</div>		
+	</div>
+</body>
+</html>

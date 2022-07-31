@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>윤종정 포트폴리오</title>
+    <meta name="description" content="포트폴리오"/>
+    <meta name="author" content="jongjung" />
+    <meta name='Publisher' content='jongjung'>
+    <meta name='Keywords' content='포트폴리오'>
+    <link rel="icon" href="images/favicon.ico" />
+    <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <a href="index.html"><i class="fas fa-feather"> YOON</i></a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="images/charicter.png"
+          alt="Ellie's profile photo"
+          class="home__avatar"/> 
+        <h1 class="home__title">Welcome!</h1>
+        <h2 class="home__description">
+         I'm a web Publisher
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <div class="about__profile">
+          <div class="profile">
+            <dl>
+              <dt>Profile<span></span></dt>
+              <dd>-윤종정 / 충청남도 아산시 거주</dd>
+              <dd>-1995.03.04</dd>
+            </dl>
+          </div>
+          <div class="history">
+            <dl>
+              <dt>History<span></span></dt>
+              <dd>더휴먼 컴퓨터아트아카데미 반응형/<br>웹퍼블리셔/프론트엔드 웹개발자 과정 수료
+              </dd>
+            </dl>
+          </div>
+          <div class="License">
+            <dl>
+              <dt>License<span></span></dt>
+              <dd>-웹디자인기능사</dd>
+            </dl>
+          </div>
+      </div>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <div class="major__sub"></div>
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">HTML</h2>
+          <div class="major__description">
+            웹표준, 웹접근성
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <div class="major__sub"></div>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h2 class="major__title">CSS</h2>
+          <p class="major__description">
+            SASS, 반응형 웹, BEM방법론
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <div class="major__sub"></div>
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h2 class="major__title">JavaScript</h2>
+          <p class="major__description">
+              jQuery, react
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>jQuery</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>react</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Photoshop</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Notepad ++</span></li>
+                <li><span>Brackets</span></li>
+                <li><span>Atom</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>GitHub</span></li>
+                <li><span>Figma</span></li>
+                <li><span>Zeplin</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+     <div class="section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">4</span>
+        </button>
+        <button class="category__btn" data-filter="PC">
+          PC <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="MOBILE">
+          MOBILE <span class="category__count">1</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="projects/project01/index.html" class="project" target="blank" data-type="PC">
+          <img
+            src="images/jeju.png"
+            alt="제주시청"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>제주시청</h3>
+            <span>클론코딩</span>
+          </div>
+        </a>
+        <a
+          href="projects/project02/index.html"
+          class="project"
+          data-type="PC"
+          target="blank"
+        >
+          <img
+            class="project__img"
+            src="images/Kyochon.png"
+            alt="자바스크립트 앱"
+          />
+          <div class="project__description">
+            <h3>자바스크립트 앱</h3>
+            <span>자바스크립트</span>
+          </div>
+        </a>
+        <a
+          href="https://dbswhdwjd.github.io/Crypto-Tracker/"
+          class="project"
+          data-type="PC"
+          target="blank"
+        >
+          <img class="project__img" src="images/coin.png" alt="가상화폐" />
+          <div class="project__description">
+            <h3>CRYPTO TRACKER</h3>
+            <span>리액트, 스타일컴포넌트</span>
+          </div>
+        </a>
+        <a href="projects/project04/index.html" class="project" data-type="MOBILE" target="blank">
+          <img class="project__img" src="images/mobile.png" alt="모바일홈페이지" />
+          <div class="project__description">
+            <h3>DAUNT BOOKS</h3>
+            <span>모바일</span>
+          </div>
+        </a>
+      </div>
+     </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">CONTACT</h1>
+      <h2 class="contact__email">dnswhdwjd@naver.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/dbswhdwjd" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        Copyright 2021. 윤종정. All right Reserved.
+      </p>
+    </section>
+    <!-- Arrow up -->
+    <div class="top">
+      <div>
+        <img src="images/top_arrow.png" alt="위로 이동하기">
+        <img src="images/top_arrow.png" alt="위로 이동하기">
+        <img src="images/top_arrow.png" alt="위로 이동하기">
+        TOP
+      </div>
+  </div>
+  </body>
+</html>

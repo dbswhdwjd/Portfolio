@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* 레이아웃 */
+header{padding: 13px 15px 10px; display: flex; justify-content: space-between; border-bottom: 1px solid #c4c4c4;}
+main{}
+
+/* header */
+#basket-title{display: flex;}
+#basket-title h1{font-size: 16px; font-weight:bold; padding-left: 10px;}
+/* main */
+#basket-contents .basket-title ul{display: flex;}
+#basket-contents .basket-title ul li{width: 50%; text-align: center; padding: 20px 0; background: #e7e7e7;}
+#basket-contents .basket-title ul li.active{background: #fff;}
+#basket-contents .basket-title ul li a{font-size: 16px; font-weight: bold}
+#basket-contents .basket-content{position: relative; height: 524px;}
+#basket-contents .basket-content .none-cart{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align:center}
+#basket-contents .basket-content .none-cart p{font-size:16px;}

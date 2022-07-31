@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='Keywords' content='모바일,디자인,서점'>
+    <meta name='Author' content='jongjung'>
+    <meta name='Publisher' content='jongjung'>
+    <meta name='Description' content='모바일 사이트 만들기'>
+    <title>DAUNT BOOKS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 구글웹폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 폰트어썸 -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="head-top">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+            <div class="menu-bar"><a href="#"><img src="images/Menu.png" alt="메뉴바"></a></div>
+            <form action="#" method="get" class="form-search">
+                <label for="search"><i class="fas fa-search"></i><input type="text" placeholder="제목,저자,출판사 검색" id="search"></label>
+            </form>
+        </div>
+        <div class="head-bottom">
+            <ul>
+                <li><a href="index.html"><img src="images/Home.png" alt="홈화면"><span class="bar"></span></a></li>
+                <li><a href="notice.html"><img src="images/Bell.png" alt="알림"><span></span></a></li>
+                <li><a href="shopping-Basket.html"><img src="images/Cart.png" alt="장바구니"><span></span></a></li>
+                <li><a href="my-page.html"><img src="images/User.png" alt="마이페이지"><span></span></a></li>
+            </ul>
+        </div>
+    </header>
+    <nav id="nav" class="swiper-container mySwiper4">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="#">국내도서</a></li>
+            <li class="swiper-slide"><a href="#">외국도서</a></li>
+            <li class="swiper-slide"><a href="#">만화책</a></li>
+            <li class="swiper-slide"><a href="#">eBook</a></li>
+            <li class="swiper-slide"><a href="#">웹소설</a></li>
+            <li class="swiper-slide"><a href="#">이벤트</a></li>
+            <li class="swiper-slide"><a href="#">특가상품</a></li>
+            <li class="swiper-slide"><a href="#">로맨스</a></li>
+            <li class="swiper-slide"><a href="#">판타지</a></li>
+            <li class="swiper-slide"><a href="#">중고상점</a></li>
+        </ul>
+    </nav>
+    <section id="image-slide">
+        <h2 class="ir_so">배너 슬라이드</h2>
+        <div class="swiper-container mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/banner-img1.jpg" alt="배너이미지1"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner-img2.jpg" alt="배너이미지2"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner-img3.jpg" alt="배너이미지3"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner-img4.jpg" alt="배너이미지4"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner-img5.jpg" alt="배너이미지5"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner-img6.jpg" alt="배너이미지6"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+    </section>
+    <section id="new-book">
+        <h2>지금 바로 나온 신간!</h2>
+        <div class="swiper-container mySwiper2">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book1.jpg" alt="개떡아빠">
+                        <p>개떡아빠</p>
+                        <span>김세호</span>
+                    </a>
+
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book2.jpg" alt="토와의 정원">
+                        <p>토와의 정원</p>
+                        <span>오가와 이토</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book3.jpg" alt="키다리 아저씨">
+                        <p>키다리 아저씨</p>
+                        <span>진 웹스터</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book1.jpg" alt="개떡아빠">
+                        <p>개떡아빠</p>
+                        <span>김세호</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book2.jpg" alt="토와의 정원">
+                        <p>토와의 정원</p>
+                        <span>오가와 이토</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book3.jpg" alt="키다리 아저씨">
+                        <p>키다리 아저씨</p>
+                        <span>진 웹스터</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book1.jpg" alt="개떡아빠">
+                        <p>개떡아빠</p>
+                        <span>김세호</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book2.jpg" alt="토와의 정원">
+                        <p>토와의 정원</p>
+                        <span>오가와 이토</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/new-book3.jpg" alt="키다리 아저씨">
+                        <p>키다리 아저씨</p>
+                        <span>진 웹스터</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="people-read">
+        <div class="timer">
+            <figure>
+                <img src="images/Clock.png" alt="시계아이콘">
+            </figure>
+            <p><span class="hour">00</span>시 <span class="minute">00</span>분</p>
+        </div>
+        <h2>사람들이 지금 많이 읽는 책</h2>
+        <div class="swiper-container mySwiper3">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bookrank">
+                        <a href="#"><img src="images/more-book1.jpg" alt="북랭킹1"></a>
+                        <div class="book-info">
+                            <p>1</p>
+                            <div class="book-title">
+                                <p><a href="#">전설로 떠나는 월가의 영웅</a></p>
+                                <span>피터린치</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/more-book2.jpg" alt="북랭킹2"></a>
+                        <div class="book-info">
+                            <p>2</p>
+                            <div class="book-title">
+                                <p><a href="#">모모</a></p>
+                                <span>미하엘 엔더</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/more-book3.jpg" alt="북랭킹3"></a>
+                        <div class="book-info">
+                            <p>3</p>
+                            <div class="book-title">
+                                <p><a href="#">우리가 빛의 속도로 갈 수 없다면</a></p>
+                                <span>김초엽</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="bookrank">
+                        <a href="#"><img src="images/more-book4.jpg" alt="북랭킹4"></a>
+                        <div class="book-info">
+                            <p>4</p>
+                            <div class="book-title">
+                                <p><a href="#">기억전달자</a></p>
+                                <span>로이스 로리</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/more-book5.jpg" alt="북랭킹5"></a>
+                        <div class="book-info">
+                            <p>5</p>
+                            <div class="book-title">
+                                <p><a href="#">십대를 위한 공부사전</a></p>
+                                <span>김경일</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/more-book6.jpg" alt="북랭킹6"></a>
+                        <div class="book-info">
+                            <p>6</p>
+                            <div class="book-title">
+                                <p><a href="#">이토록 공부가 재미있어지는 순간</a></p>
+                                <span>박성현</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="today-find">
+        <h2>오늘, DAUNT BOOKS의 발견</h2>
+        <div class="swiper-container mySwiper2">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/find-img1.jpg" alt="군주론">
+                        <p>군주론</p>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/find-img2.jpg" alt="지리의 힘">
+                        <p>지리의 힘</p>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/find-img3.jpg" alt="자유론">
+                        <p>자유론</p>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/find-img4.jpg" alt="차트의 기술">
+                        <p>차트의 기술</p>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/find-img5.jpg" alt="연환기">
+                        <p>연환기</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="best-book">
+        <h2><a href="#">베스트셀러<img src="images/Right_Chevron.png" alt="바로가기"></a></h2>
+        <div class="swiper-container mySwiper3">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bookrank">
+                        <a href="#"><img src="images/best-book1.jpg" alt="베스트셀러1"></a>
+                        <div class="book-info">
+                            <p>1</p>
+                            <div class="book-title">
+                                <p><a href="#">조국의 시간</a></p>
+                                <span>조국</span>
+                                <div class="star-rating">
+                                    <span><img src="images/star5.png" alt="별점5"></span>
+                                    <span>169</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/best-book2.jpg" alt="베스트셀러2"></a>
+                        <div class="book-info">
+                            <p>2</p>
+                            <div class="book-title">
+                                <p><a href="#">매매의 기술</a></p>
+                                <span>박병창</span>
+                                <div class="star-rating">
+                                    <span><img src="images/star5.png" alt="별점5"></span>
+                                    <span>59</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/best-book3.jpg" alt="베스트셀러3"></a>
+                        <div class="book-info">
+                            <p>3</p>
+                            <div class="book-title">
+                                <p><a href="#">부의 시나리오</a></p>
+                                <span>오건창</span>
+                                <div class="star-rating">
+                                    <span><img src="images/star4.png" alt="별점4"></span>
+                                    <span>106</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="bookrank">
+                        <a href="#"><img src="images/best-book4.jpg" alt="베스트셀러4"></a>
+                        <div class="book-info">
+                            <p>4</p>
+                            <div class="book-title">
+                                <p><a href="#">완전한 행복</a></p>
+                                <span>정유정</span>
+                                <div class="star-rating">
+                                    <span><img src="images/star3.png" alt="별점3"></span>
+                                    <span>87</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/best-book5.jpg" alt="베스트셀러5"></a>
+                        <div class="book-info">
+                            <p>5</p>
+                            <div class="book-title">
+                                <p><a href="#">그러라 그래</a></p>
+                                <span>양희은</span>
+                                <div class="star-rating">
+                                    <span><img src="images/star5.png" alt="별점5"></span>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookrank">
+                        <a href="#"><img src="images/best-book6.jpg" alt="베스트셀러6"></a>
+                        <div class="book-info">
+                            <p>6</p>
+                            <div class="book-title">
+                                <p><a href="#">미드나잇 라이브러리</a></p>
+                                <span>매트 헤이그</span>
+                                <div class="star-rating">
+                                    <span><img src="images/star5.png" alt="별점5"></span>
+                                    <span>13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <h2>DAUNT BOOKS 사업자 정보</h2>
+        <p class="footer-info">대표자 : 윤종정 ㅣ사업자 등록번호: 120-25-56451<br>
+            통신판매업 신고번호 : 제 2005-서울강남 52-02115호<br>
+            이메일 : dnswhdwjd@naver.com l 대표전화 : 1522-1223<br>
+            주소 : 서울시 강남구 서초동 21번지<br>
+            copyright © DAUNT BOOKS Corp.All Rights Reserved </p>
+        <p class="footer-security"><a href="#">개인정보 처리방침</a> ㅣ <a href="#">이용약관</a> ㅣ <a href="#">고객센터</a></p>
+    </footer>
+    <div class="menu_bg"></div>
+    <div class="sidebar_menu">
+        <div class="close_btn">
+            <a href="#" class="cf"><i class="far fa-times-circle"></i></a>
+        </div>
+        <h1 class="side-logo"><img src="images/side-boar-logo.png" alt="사이드바로고"></h1>
+        <ul class="login">
+                <li><a href="login_form.html">로그인</a></li>
+                <li><a href="member_form.html">회원가입</a></li>
+        </ul>
+        <ul class="gnd-menu">
+            <li><a href="my-page.html">마이페이지</a></li>
+            <li><a href="my-library.html">내서재</a></li>
+            <li><a href="shopping-Basket.html">장바구니</a></li>
+            <li><a href="notice.html">알림</a></li>
+        </ul>
+    </div>
+</body>
+</html>

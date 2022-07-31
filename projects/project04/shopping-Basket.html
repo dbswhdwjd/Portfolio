@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <meta name='Keywords' content='모바일,디자인,서점,장바구니페이지'>
+	<meta name='Author' content='jongjung'>
+    <meta name='Publisher' content='jongjung'>
+	<meta name='Description' content='장바구니페이지'>	
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shopping-basket.css">
+    <!-- 구글웹폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/shopping-basket.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="basket-title">
+            <a href="#"><img src="images/Left_Arrow.jpg" alt="왼쪽방향"></a>
+            <h1>장바구니</h1>
+        </div>
+        <div class="notice-icon">
+            <a href="notice.html"><img src="images/Bell.jpg" alt="알림아이콘"></a>
+        </div>
+    </header>
+    <main>
+        <div id="basket-contents">
+            <div class="basket-title">
+                <ul>
+                    <li class="active"><a href="#">구매 가능</a></li>
+                    <li><a href="#">대여 가능</a></li>
+                </ul>
+            </div>
+            <div class="basket-content">
+                <div class="buy">
+                    <div class="none-cart">
+                        <figure>
+                            <img src="images/Cart.jpg" alt="카트이미지">
+                        </figure>
+                        <p>구매한 책이 없습니다.</p>
+                    </div>
+                </div>
+                <div class="rental">
+                    <div class="none-cart">
+                        <figure>
+                            <img src="images/Cart.jpg" alt="카트이미지">
+                        </figure>
+                        <p>대여한 책이 없습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
